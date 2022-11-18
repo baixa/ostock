@@ -32,9 +32,16 @@ The main structure is based on Java (Spring Cloud)
   <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/>&nbsp;
 </div>
 
+## Required tools
+
+ * [Git](https://git-scm.com)
+ * [Java 17+](https://www.oracle.com/java/)
+ * [Maven](https://maven.apache.org/)
+ * [Docker and docker-compose](https://www.docker.com/)
+
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Java 17+](https://www.oracle.com/java/) and [Maven](https://maven.apache.org/) installed on your computer. From your command line:
+Check, that required tools was installed and run this commands from your command line:
 
 ```bash
 # Clone this repository
@@ -43,8 +50,11 @@ $ git clone https://github.com/baixa/ostock-license.git
 # Go into the repository
 $ cd ostock-license
 
-# Run the application
-$ ./mvnw spring-boot:run
+# Create JAR-file
+$ mvn clean package
+
+# Run docker services
+$ docker-compose up -d
 ```
 
 ---
