@@ -53,6 +53,9 @@ $ cd ostock-license
 # Create JAR-file
 $ mvn clean package
 
+# Create docker image
+$ mvn package dockerfile:build
+
 # Run docker services
 $ docker-compose up -d
 ```
