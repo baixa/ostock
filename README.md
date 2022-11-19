@@ -37,7 +37,7 @@ The main structure is based on Java (Spring Cloud)
  * [Git](https://git-scm.com)
  * [Java 17+](https://www.oracle.com/java/)
  * [Maven](https://maven.apache.org/)
- * [Docker and docker-compose](https://www.docker.com/)
+ * [Docker](https://www.docker.com/)
 
 ## How To Use
 
