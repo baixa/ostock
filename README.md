@@ -45,19 +45,16 @@ Check, that required tools was installed and run this commands from your command
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/baixa/ostock-license.git
+$ git clone https://github.com/baixa/ostock.git
 
 # Go into the repository
-$ cd ostock-license
-
-# Create JAR-file
-$ mvn clean package
+$ cd ostock
 
 # Create docker image
-$ mvn package dockerfile:build
+$ mvn clean package dockerfile:build
 
 # Run docker services
-$ docker-compose up -d
+$ docker-compose -f docker/docker-compose.yml up
 ```
 
 ---
