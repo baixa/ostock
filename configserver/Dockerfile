@@ -1,5 +1,5 @@
 #Start with a base image containing Java runtime
-FROM openjdk:11-slim as build
+FROM openjdk:17-slim as build
 
 # Add Maintainer Info
 LABEL maintainer="Maksimchuk Ivan <baixa2003@gmail.com"
@@ -14,7 +14,7 @@ COPY ${JAR_FILE} app.jar
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf /app.jar)
 
 #Same Java runtime
-FROM openjdk:11-slim
+FROM openjdk:17-slim
 
 #Add volume pointing to /tmp
 VOLUME /tmp
