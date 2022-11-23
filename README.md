@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://psv4.userapi.com/c236331/u214961402/docs/d19/af209b4e8fa8/increase.png?extra=qS3BZ3RVt5WynH2LHKgpc1So4jjFAEAYHoazUghNV2beUFxpN6yaUVFL2ukcu91_dfeSR9dNuS-XqGzXqImar1tt3J_ahWXCJ4vME_ACezRFIOwijAtbfo9h_8oWwkgUfh0YylH5onuxDire0atN3nM" alt="Optima Growth" width="200">
+  <img src="https://cdn-icons-png.flaticon.com/512/4256/4256900.png" alt="Optima Growth" width="200">
   <br>
   Optima Stock
   <br>
