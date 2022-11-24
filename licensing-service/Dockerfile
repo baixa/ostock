@@ -1,5 +1,5 @@
 FROM openjdk:17-slim as build
-LABEL maintainer="Illary Huaylupo <illaryhs@gmail.com>"
+LABEL maintainer="Maksimchuk Ivan <baixa2003@gmail.com>"
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf /app.jar)
