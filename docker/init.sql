@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS public.organizations
     contact_email text COLLATE pg_catalog."default",
     contact_phone text COLLATE pg_catalog."default",
     CONSTRAINT organizations_pkey PRIMARY KEY (organization_id)
-    )
+)
 
     TABLESPACE pg_default;
 
@@ -24,13 +24,13 @@ CREATE TABLE IF NOT EXISTS public.licenses
     comment text COLLATE pg_catalog."default",
     CONSTRAINT licenses_pkey PRIMARY KEY (license_id),
     CONSTRAINT licenses_organization_id_fkey FOREIGN KEY (organization_id)
-    REFERENCES public.organizations (organization_id) MATCH SIMPLE
-    ON UPDATE NO ACTION
-    ON DELETE NO ACTION
-    NOT VALID
-    )
+        REFERENCES public.organizations (organization_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
 
     TABLESPACE pg_default;
 
 ALTER TABLE public.licenses
-    OWNER to postgres;
+    OWNER to postgres

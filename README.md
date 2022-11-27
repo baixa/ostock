@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
+  <a href="#services">Services</a> •
   <a href="#languages-and-tools">Languages and Tools</a> •
   <a href="#how-to-use">How To Use</a>
 </p>
@@ -22,7 +23,15 @@
 * Software supply
 * License management
 
-### Languages and Tools
+## Services
+
+1. A **Spring Cloud Config server** that is deployed as Docker container and can manage a services' configuration information using a file system/ classpath or GitHub-based repository.
+2. A **Eureka server** running as a Spring-Cloud based service. This service will allow multiple service instances to register with it. Clients that need to call a service will use Eureka to look up the physical location of the target service.
+3. An **Organization service** that will manage organization data used within Ostock.
+4. A **Licensing service** that will manage licensing data used within Ostock.
+5. A **Postgres SQL Database** used to hold the data.
+
+## Languages and Tools
 
 The main structure is based on Java (Spring Cloud)
 
@@ -50,11 +59,8 @@ $ git clone https://github.com/baixa/ostock.git
 # Go into the repository
 $ cd ostock
 
-# Create docker image
-$ mvn clean package dockerfile:build
-
-# Run docker services
-$ docker-compose -f docker/docker-compose.yml up
+# Run shell script
+$ bash bin/control.sh
 ```
 
 ---

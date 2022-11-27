@@ -8,8 +8,8 @@
     <packaging>pom</packaging>
 
 
-    <name>optimagrowth-parent-pom</name>
-    <description>Parent Pom for the optimagrowth project</description>
+    <name>Optima Growth</name>
+    <description>Parent Pom for Optima Growth project</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,6 +25,8 @@
     <modules>
         <module>configserver</module>
         <module>licensing-service</module>
+        <module>organization-service</module>
+        <module>eurekaserver</module>
     </modules>
     <build>
         <plugins>
